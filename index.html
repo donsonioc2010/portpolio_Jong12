@@ -6,7 +6,7 @@
         <title>Jong1's Portpolio</title>
         <meta name="description" content="Portfolio by Jong1" />
         <meta name="author" content="Jong1" />
-        <link rel="icon" type="image/png" href="img/laptop-logo.png" />
+        <link rel="icon" type="image/png" href="img/page/laptop-logo.png" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/6ac784f4b9.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css" />
@@ -20,11 +20,13 @@
     <body>
         <!-- Navbar -->
         <nav id="navbar">
+            <!-- 네비게이션 로고 -->
             <div class="navbar__logo">
                 <i class="fas fa-laptop-code" style="user-select: auto"></i>
                 <a href="#">Jong1</a>
             </div>
 
+            <!-- Nav메뉴 -->
             <div class="navbar__menu">
                 <ul class="navbar_menu">
                     <li class="navbar__menu__item">Home</li>
@@ -34,22 +36,76 @@
                     <li class="navbar__menu__item">Contact</li>
                 </ul>
             </div>
+
             <!-- home -->
             <section id="home">
-                <img src="img/profile.jpg" alt="Jong1 profile photo" class="home__avatar" />
+                <img src="img/profile/profile.jpg" alt="Jong1 profile photo" class="home__avatar" />
                 <h1 class="home__title">
                     안녕하세요,<br />
                     공부를 좋아하는 개발자입니다!
                 </h1>
                 <h2 class="home__description">
-                    자바를 중점적으로 공부하였으며 백엔드를 희망하는 신입 개발자이며,<br />
-                    거주지는 안양의 평촌에 위치합니다.
+                    스스로 해보고 싶은 것을 찾아서 구현하는 것을 좋아합니다,<br />
+                    또한 거주지는 안양의 평촌에 위치합니다.
                 </h2>
                 <button class="home__contact">Contact Me</button>
             </section>
 
-            <!-- about -->
-            <section id="about"></section>
+            <!-- About -->
+            <section id="about">
+                <h1>About me</h1>
+                <p>
+                    백엔드를 좋아하며 프론트엔드에도 관심이 많은 신입 개발자입니다. 주로 사용하는 언어는 Java입니다. 그리고 제가 사용하게 될
+                    언어의 문서를 보는 것을 좋아합니다. 수원과학대학교에서 컴퓨터정보과로 2019년에 졸업하였습니다.
+                </p>
+                <!-- 어바웃 기술 -->
+                <div class="about__majors">
+                    <div class="mjor">
+                        <div class="major__icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+
+                        <div class="major__title">Back-End</div>
+                        <div class="major__description">Java, Spring FrameWork, Spring Boot, Rest APIs</div>
+                    </div>
+
+                    <div class="mjor">
+                        <div class="major__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+
+                        <div class="major__title">Front-End</div>
+                        <div class="major__description">HTML, CSS, JavaScript, jQuery, WebAPIs</div>
+                    </div>
+
+                    <div class="mjor">
+                        <div class="major__icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+
+                        <div class="major__title">Database</div>
+                        <div class="major__description">Oracle JDBC</div>
+                    </div>
+                </div>
+
+                <div class="about__jobs">
+                    <div class="job">
+                        <img src="img/job/ssc.jpg" alt="ssc" class="job__logo" />
+                        <p class="job__name">Suwon Science College Student</p>
+                        <p class="job__period">2014.03 ~ 2019.02</p>
+                    </div>
+                    <div class="job">
+                        <img src="img/job/hallym.png" alt="hallym" class="job__logo" />
+                        <p class="job__name">PyeongChon Hallym Hospital 43W Support By Nurses</p>
+                        <p class="job__period">2016.11 ~ 2018.01</p>
+                    </div>
+                    <div class="job">
+                        <img src="img/job/hallym.png" alt="hallym" class="job__logo" />
+                        <p class="job__name">PyeongChon Hallym Hospital 43W Support By Nurses</p>
+                        <p class="job__period">2018.11 ~ 2020.02</p>
+                    </div>
+                </div>
+            </section>
 
             <!-- 기술스택 -->
             <section id="skills"></section>
