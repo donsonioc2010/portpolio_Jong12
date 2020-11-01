@@ -1,0 +1,10 @@
+{
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "prettier.printWidth": 140,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "editor.tokenColorCustomizations": {
+        "comments": "#ffc2c2"
+    }
+}
