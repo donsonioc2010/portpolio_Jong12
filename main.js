@@ -2,11 +2,23 @@
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
-// nav 일정 스크롤 이상 내려갈시에 보이게 하는 역할
+// nav 일정 스크롤 이상 내려갈시에 보이게 하는역할
 document.addEventListener('scroll', () => {
     if (window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');
     } else {
         navbar.classList.remove('navbar--dark');
     }
+});
+
+//스크롤링 핸들 역할
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', (event) => {
+    const target = event.target;
+    const link = target.dataset.link;
+    if (link == null) {
+        return;
+    }
+    const scrollTo = document.querySelector(link);
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
 });
