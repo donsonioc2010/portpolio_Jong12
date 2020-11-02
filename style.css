@@ -9,7 +9,7 @@
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
-    --color-blue: #73aace;
+    --color-blue: #486bdc;
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
@@ -90,12 +90,20 @@ button {
 }
 /* Navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-pink);
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
+    transition: all var(--animation-duration) ease-in-out;
+    z-index: 3;
+}
+#navbar.navbar--dark {
+    background-color: var(--color-blue);
+    padding: 8px;
 }
 .navbar__menu {
     display: flex;
@@ -122,13 +130,15 @@ button {
     right: 32px;
     font-size: 24px;
     color: var(--color-white);
-    top: 24px;
+    top: 50%;
+    transform: translateY(-50%);
     display: none;
 }
 /* Home */
 #home {
     background: url('img/page/home-back.png') center/cover no-repeat;
     padding: 40px;
+    padding-top: 100px;
     text-align: center;
 }
 .home__avatar {
@@ -210,7 +220,7 @@ button {
     text-align: left;
 }
 .job__name,
-job__period {
+.job__period {
     color: var(--color-light-grey);
 }
 .job__name {
@@ -359,7 +369,7 @@ job__period {
 }
 
 #contact {
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
 }
 .contact__title,
 .contact__email,
