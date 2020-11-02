@@ -11,11 +11,6 @@
         <script src="https://kit.fontawesome.com/6ac784f4b9.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css" />
         <script src="main.js" defer></script>
-        <!-- <style>
-            * {
-                font-family: 'Open Sans', sans-serif;
-            }
-        </style> -->
     </head>
     <body>
         <!-- Navbar -->
@@ -28,214 +23,213 @@
 
             <!-- Nav메뉴 -->
             <div class="navbar__menu">
-                <ul class="navbar_menu">
-                    <li class="navbar__menu__item">Home</li>
+                <ul class="navbar__menu">
+                    <li class="navbar__menu__item active">Home</li>
                     <li class="navbar__menu__item">About</li>
                     <li class="navbar__menu__item">Skills</li>
                     <li class="navbar__menu__item">Work</li>
                     <li class="navbar__menu__item">Contact</li>
                 </ul>
             </div>
-
-            <!-- home -->
-            <section id="home">
-                <img src="img/profile/profile.jpg" alt="Jong1 profile photo" class="home__avatar" />
-                <h1 class="home__title">
-                    안녕하세요,<br />
-                    공부를 좋아하는 개발자입니다!
-                </h1>
-                <h2 class="home__description">
-                    스스로 해보고 싶은 것을 찾아서 구현하는 것을 좋아합니다,<br />
-                    또한 거주지는 안양의 평촌에 위치합니다.
-                </h2>
-                <button class="home__contact">Contact Me</button>
-            </section>
-
-            <!-- About -->
-            <section id="about">
-                <h1>About me</h1>
-                <p>
-                    백엔드를 좋아하며 프론트엔드에도 관심이 많은 신입 개발자입니다. 주로 사용하는 언어는 Java입니다. 그리고 제가 사용하게 될
-                    언어의 문서를 보는 것을 좋아합니다. 수원과학대학교에서 컴퓨터정보과로 2019년에 졸업하였습니다.
-                </p>
-                <!-- 어바웃 기술 -->
-                <div class="about__majors">
-                    <div class="mjor">
-                        <div class="major__icon">
-                            <i class="fab fa-java"></i>
-                        </div>
-
-                        <div class="major__title">Back-End</div>
-                        <div class="major__description">Java, Spring FrameWork, Spring Boot, Rest APIs</div>
-                    </div>
-
-                    <div class="mjor">
-                        <div class="major__icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-
-                        <div class="major__title">Front-End</div>
-                        <div class="major__description">HTML, CSS, JavaScript, jQuery, WebAPIs</div>
-                    </div>
-
-                    <div class="mjor">
-                        <div class="major__icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-
-                        <div class="major__title">Database</div>
-                        <div class="major__description">Oracle JDBC</div>
-                    </div>
-                </div>
-
-                <div class="about__jobs">
-                    <div class="job">
-                        <img src="img/job/ssc.jpg" alt="ssc" class="job__logo" />
-                        <p class="job__name">Suwon Science College Student</p>
-                        <p class="job__period">2014.03 ~ 2019.02</p>
-                    </div>
-                    <div class="job">
-                        <img src="img/job/hallym.png" alt="hallym" class="job__logo" />
-                        <p class="job__name">PyeongChon Hallym Hospital 43W Support By Nurses</p>
-                        <p class="job__period">2016.11 ~ 2018.01</p>
-                    </div>
-                    <div class="job">
-                        <img src="img/job/hallym.png" alt="hallym" class="job__logo" />
-                        <p class="job__name">PyeongChon Hallym Hospital 43W Support By Nurses</p>
-                        <p class="job__period">2018.11 ~ 2020.02</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 기술스택 -->
-            <section id="skills">
-                <h1>기술스택</h1>
-                <h2>Skills & Attributes</h2>
-                <p>
-                    혼자서 많은 부분을 맡아서 해본경험이 많으며 새로운 기술을 보고서 빠르게 익히는 편입니다. 또한 시간에 맞춰서 개발을
-                    최대한 하려는 편이며, 기본적인 계획을 빠르게 하는편입니다. 또한 개발을 함에 있어서 스트레스를 많이 받지 않으며 하는
-                    타입이며 주변사람과 지속적으로 커뮤니케이션을 하면서 팀원에 맞춰 개발을 진행하는 편입니다.
-                </p>
-
-                <div class="skillset">
-                    <div class="skillset__left">
-                        <h3 class="skillset__title">Skills</h3>
-                        <div class="skill">
-                            <div class="skill__description">
-                                <span>Java</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill__description">
-                                <span>HTML</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill__description">
-                                <span>CSS</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill__description">
-                                <span>JavaScript</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill__description">
-                                <span>jQuery</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill__description">
-                                <span>Oracle</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill__bar">
-                                <div class="skill__value"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skillset__right">
-                        <div class="tools">
-                            <h3 class="skillset__title">Tools</h3>
-                            <ul class="tools__list">
-                                <li><span>Eclipese</span></li>
-                                <li><span>Spring Tool Suite(sts)</span></li>
-                                <li><span>Visual Studio Code</span></li>
-                                <li><span>sql Developer</span></li>
-                                <li><span>sql Modeler</span></li>
-                                <li><span>IntelliJ(예정)</span></li>
-                            </ul>
-                        </div>
-                        <div class="etc">
-                            <h3 class="skillset__title">etc</h3>
-                            <ul class="etc__list">
-                                <li><span>Git / Source Tree</span></li>
-                                <li><span>Notion</span></li>
-                                <li><span>ERD Cloud</span></li>
-                                <li><span>Draw.io</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 작업이력 -->
-            <section id="work">
-                <h1>My Work</h1>
-                <h3>Projects</h3>
-                <div class="work__categories"><button class="category__btn">All</button><span class="category__count">2</span></div>
-
-                <div class="work__projects">
-                    <a href="https://github.com/donsonioc2010/4leafClover" class="project" target="blank">
-                        <img src="img/project/semi.png" alt="bitSemiProjet" class="project__img" />
-                        <div class="project__description">
-                            <h3>BitCamp SemiProject</h3>
-                            <span>물류 관리 프로젝트</span>
-                        </div>
-                    </a>
-                    <a href="https://github.com/donsonioc2010/Inphomation" class="project" target="blank">
-                        <img src="img/project/final.png" alt="bitFinalProjet" class="project__img" />
-                        <div class="project__description">
-                            <h3>BitCamp FinalProject</h3>
-                            <span>사진공유 SNS서비스</span>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <!-- Contcat -->
-            <section id="contact">
-                <h1 class="contact__title">연락처</h1>
-                <h2 class="contact__email">whddnjs822@gmail.com</h2>
-                <h2 class="contact__email">jong12@kakao.com</h2>
-                <h2 class="contact__email">donsonic@naver.com</h2>
-                <div class="contact__links">
-                    <a href="https://github.com/donsonioc2010" target="blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </section>
         </nav>
+        <!-- home -->
+        <section id="home">
+            <img src="img/profile/profile.jpg" alt="Jong1 profile photo" class="home__avatar" />
+            <h1 class="home__title">
+                안녕하세요,<br />
+                공부를 좋아하는 개발자입니다!
+            </h1>
+            <h2 class="home__description">
+                스스로 해보고 싶은 것을 찾아서 구현하는 것을 좋아합니다,<br />
+                또한 거주지는 안양의 평촌에 위치합니다.
+            </h2>
+            <button class="home__contact">Contact Me</button>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h1>About me</h1>
+            <p>
+                백엔드를 좋아하며 프론트엔드에도 관심이 많은 신입 개발자입니다. 주로 사용하는 언어는 Java입니다. 그리고 제가 사용하게 될
+                언어의 문서를 보는 것을 좋아합니다. 수원과학대학교에서 컴퓨터정보과로 2019년에 졸업하였습니다.
+            </p>
+            <!-- 어바웃 기술 -->
+            <div class="about__majors">
+                <div class="mjor">
+                    <div class="major__icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+
+                    <div class="major__title">Back-End</div>
+                    <div class="major__description">Java, Spring FrameWork, Spring Boot, Rest APIs</div>
+                </div>
+
+                <div class="mjor">
+                    <div class="major__icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+
+                    <div class="major__title">Front-End</div>
+                    <div class="major__description">HTML, CSS, JavaScript, jQuery, WebAPIs</div>
+                </div>
+
+                <div class="mjor">
+                    <div class="major__icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+
+                    <div class="major__title">Database</div>
+                    <div class="major__description">Oracle JDBC</div>
+                </div>
+            </div>
+
+            <div class="about__jobs">
+                <div class="job">
+                    <img src="img/job/ssc.jpg" alt="ssc" class="job__logo" />
+                    <p class="job__name">Suwon Science College Student</p>
+                    <p class="job__period">2014.03 ~ 2019.02</p>
+                </div>
+                <div class="job">
+                    <img src="img/job/hallym.png" alt="hallym" class="job__logo" />
+                    <p class="job__name">PyeongChon Hallym Hospital 43W Support By Nurses</p>
+                    <p class="job__period">2016.11 ~ 2018.01</p>
+                </div>
+                <div class="job">
+                    <img src="img/job/hallym.png" alt="hallym" class="job__logo" />
+                    <p class="job__name">PyeongChon Hallym Hospital 43W Support By Nurses</p>
+                    <p class="job__period">2018.11 ~ 2020.02</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 기술스택 -->
+        <section id="skills">
+            <h1>기술스택</h1>
+            <h2>Skills & Attributes</h2>
+            <p>
+                혼자서 많은 부분을 맡아서 해본경험이 많으며 새로운 기술을 보고서 빠르게 익히는 편입니다. 또한 시간에 맞춰서 개발을 최대한
+                하려는 편이며, 기본적인 계획을 빠르게 하는편입니다. 또한 개발을 함에 있어서 스트레스를 많이 받지 않으며 하는 타입이며
+                주변사람과 지속적으로 커뮤니케이션을 하면서 팀원에 맞춰 개발을 진행하는 편입니다.
+            </p>
+
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Java</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>jQuery</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Oracle</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Eclipese</span></li>
+                            <li><span>Spring Tool Suite(sts)</span></li>
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>sql Developer</span></li>
+                            <li><span>sql Modeler</span></li>
+                            <li><span>IntelliJ(예정)</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git / Source Tree</span></li>
+                            <li><span>Notion</span></li>
+                            <li><span>ERD Cloud</span></li>
+                            <li><span>Draw.io</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 작업이력 -->
+        <section id="work">
+            <h1>My Work</h1>
+            <h3>Projects</h3>
+            <div class="work__categories"><button class="category__btn">All</button><span class="category__count">2</span></div>
+
+            <div class="work__projects">
+                <a href="https://github.com/donsonioc2010/4leafClover" class="project" target="blank">
+                    <img src="img/project/semi.png" alt="bitSemiProjet" class="project__img" />
+                    <div class="project__description">
+                        <h3>BitCamp SemiProject</h3>
+                        <span>물류 관리 프로젝트</span>
+                    </div>
+                </a>
+                <a href="https://github.com/donsonioc2010/Inphomation" class="project" target="blank">
+                    <img src="img/project/final.png" alt="bitFinalProjet" class="project__img" />
+                    <div class="project__description">
+                        <h3>BitCamp FinalProject</h3>
+                        <span>사진공유 SNS서비스</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contcat -->
+        <section id="contact">
+            <h1 class="contact__title">연락처</h1>
+            <h2 class="contact__email">whddnjs822@gmail.com</h2>
+            <h2 class="contact__email">jong12@kakao.com</h2>
+            <h2 class="contact__email">donsonic@naver.com</h2>
+            <div class="contact__links">
+                <a href="https://github.com/donsonioc2010" target="blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
     </body>
 </html>
