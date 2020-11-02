@@ -28,6 +28,18 @@ navbarMenu.addEventListener('click', (event) => {
     scrollIntoView(link);
 });
 
+//Show "arrow-up" button when scrolling down
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if (window.scrollY > homeHeight / 2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
 //Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
