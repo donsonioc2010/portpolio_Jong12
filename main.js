@@ -2,8 +2,14 @@
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
-// nav 일정 스크롤 이상 내려갈시에 보이게 하는역할
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+
 document.addEventListener('scroll', () => {
+    // Make Home Slowly fade to transparent as the window scrolls down
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+
+    // nav 일정 스크롤 이상 내려갈시에 보이게 하는역할
     if (window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');
     } else {
