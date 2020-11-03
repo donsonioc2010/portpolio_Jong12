@@ -147,6 +147,7 @@ button {
     border-radius: 50%;
     border: 2px solid var(--color-light-white);
     object-fit: cover;
+    object-position:top;
 }
 
 .home__title,
