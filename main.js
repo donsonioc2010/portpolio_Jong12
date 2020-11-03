@@ -18,6 +18,7 @@ document.addEventListener('scroll', () => {
 });
 
 //스크롤링 핸들 역할
+const navbarMenuAll = document.querySelectorAll('.navbar__menu');
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
     const target = event.target;
@@ -25,7 +26,18 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
+    for (var i = 0; i < navbarMenuAll.length; i++) {
+        navbarMenuAll[i].classList.remove('open');
+    }
     scrollIntoView(link);
+});
+// Navbar toggle Button for Small Screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    console.log(navbarMenuAll);
+    for (var i = 0; i < navbarMenuAll.length; i++) {
+        navbarMenuAll[i].classList.toggle('open');
+    }
 });
 
 //Show "arrow-up" button when scrolling down

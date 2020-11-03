@@ -108,6 +108,7 @@ button {
 .navbar__menu {
     display: flex;
 }
+
 .navbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-bold);
@@ -117,12 +118,12 @@ button {
     margin: 0 4px;
     cursor: pointer;
     border-radius: var(--size-border-radius);
+    border: 1px solid transparent;
+    border-radius: var(--size-border-radius);
 }
 
-.navbar__menu__item.active {
-    border: 1px solid var(--color-white);
-}
 .navbar__menu__item:hover {
+    border-color: var(--color-white);
     background-color: var(--color-dark-pink);
 }
 .navbar__toggle-btn {
@@ -130,8 +131,7 @@ button {
     right: 32px;
     font-size: 24px;
     color: var(--color-white);
-    top: 50%;
-    transform: translateY(-50%);
+    top: 24px;
     display: none;
 }
 /* Home */
@@ -419,12 +419,19 @@ button {
     #navbar {
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-blue);
+    }
+    #navbar.navbar--dark {
+        padding: 16px;
     }
     .navbar__menu {
         flex-direction: column;
         text-align: center;
         width: 100%;
         display: none;
+    }
+    .navbar__menu.open {
+        display: block;
     }
     .about__majors {
         flex-direction: column;
